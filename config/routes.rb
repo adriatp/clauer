@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   # Users
-  devise_for :user_accounts
+  devise_for :users
   
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
