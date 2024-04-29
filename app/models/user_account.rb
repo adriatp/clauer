@@ -4,4 +4,8 @@ class UserAccount < ApplicationRecord
   devise :database_authenticatable, :registerable,
           :recoverable, :rememberable, :validatable,
           :confirmable, :lockable, :timeoutable, :trackable
+  
+  has_one :user_profile
+
+  accepts_nested_attributes_for :user_profile
 end
